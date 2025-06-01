@@ -67,8 +67,6 @@ public class ProductController {
         }
     }
 
-    // Utilidades JSON API
-
     private ApiResponse<Object> buildProductResponse(Product product, String message, HttpStatus status) {
         Map<String, Object> attributes = new LinkedHashMap<>();
         attributes.put("nombre", product.getNombre());

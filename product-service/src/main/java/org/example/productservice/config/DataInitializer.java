@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Profile;
 import java.math.BigDecimal;
 
 @Configuration
-@Profile("dev")  // Solo activa en perfil desarrollo
+@Profile("dev")
 public class DataInitializer {
 
     @Bean

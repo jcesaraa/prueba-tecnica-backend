@@ -13,8 +13,8 @@ import lombok.AllArgsConstructor;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor  // Lombok genera el constructor vacío
-@AllArgsConstructor // Lombok genera el constructor con todos los campos
+@NoArgsConstructor
+@AllArgsConstructor
 public class InventoryItem {
 
     @Id

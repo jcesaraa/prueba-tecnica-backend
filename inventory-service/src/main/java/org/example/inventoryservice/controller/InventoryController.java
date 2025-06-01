@@ -53,7 +53,6 @@ public class InventoryController {
         }
     }
 
-    // Utilidad para construir la respuesta JSON:API
     private ApiResponse<Object> buildItemResponse(InventoryItem item, String message, HttpStatus status) {
         Map<String, Object> attributes = new LinkedHashMap<>();
         attributes.put("id", item.getId());

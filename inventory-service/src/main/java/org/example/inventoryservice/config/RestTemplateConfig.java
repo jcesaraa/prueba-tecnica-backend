@@ -46,7 +46,6 @@ public class RestTemplateConfig {
                 @NonNull byte[] body,
                 @NonNull ClientHttpRequestExecution execution) throws IOException {
 
-            // Agrega el header "X-API-KEY" con el valor de la apiKey
             request.getHeaders().add(API_KEY_HEADER, apiKey);
             return execution.execute(request, body);
         }

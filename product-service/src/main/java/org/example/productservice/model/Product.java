@@ -17,10 +17,8 @@ public class Product {
 
     private BigDecimal precio;
 
-    // Constructor vacío requerido por JPA
     public Product() {}
 
-    // Constructor con @JsonCreator y @JsonProperty para compatibilidad con Jackson
     @JsonCreator
     public Product(
             @JsonProperty("id") Long id,
@@ -31,8 +29,6 @@ public class Product {
         this.nombre = nombre;
         this.precio = precio;
     }
-
-    // Getters y setters
 
     public Long getId() {
         return id;

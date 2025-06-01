@@ -10,7 +10,6 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {
-        // Configura la información básica de la documentación OpenAPI/Swagger
         return new OpenAPI()
                 .info(new Info()
                         .title("Inventory Service API")

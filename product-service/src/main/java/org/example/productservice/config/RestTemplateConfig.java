@@ -45,7 +45,6 @@ public class RestTemplateConfig {
                 @NonNull byte[] body,
                 @NonNull ClientHttpRequestExecution execution) throws IOException {
 
-            // Agregamos el header de autenticación
             request.getHeaders().add(API_KEY_HEADER, apiKey);
 
             return execution.execute(request, body);
